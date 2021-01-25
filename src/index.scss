@@ -1,0 +1,28 @@
+.menu {
+    ul {
+        display: none;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .title {
+        font-weight: bold;
+        cursor: pointer;
+
+        &:before {
+            content: '▶';
+            padding-right: 6px;
+            color: green;
+        }
+    }
+}
+
+.menu.open {
+    ul {
+        display: block;
+    }
+
+    .title:before {
+        content: '▼';
+    }
+}
